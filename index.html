@@ -14,10 +14,26 @@
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- <link href="css/lightbox.css" rel="stylesheet"> -->
+    <!-- <script src="/lightbox.js"></script> -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="lightbox-plus-jquery.min.js"></script>
+
+
 
 </head>
 
 <body>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9&appId=153485888551333";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="cover" onclick="toggleSidenav();"></div>
     <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
         <div></div>
@@ -157,28 +173,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio1.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio1.jpg" data-lightbox="example-set">
+                        <img class="example-image" src="img/Portfolio/portfolio1.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio2.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio2.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio2.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio3.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio3.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio3.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio4.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio4.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio4.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio5.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio5.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio5.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio6.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio6.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio6.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio7.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio7.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio7.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-md-3 col-sm-4 no-padding">
-                    <a href="#"><img src="img/Portfolio/portfolio8.jpg" alt=""></a>
+                    <a class="example-image-link" href="img/Portfolio/portfolio8.jpg" data-lightbox="example-set">                    
+                        <img class="example-image" src="img/Portfolio/portfolio8.jpg" alt="">
+                    </a>
                 </div>
 
             </div>
@@ -213,12 +245,15 @@
     <section class="doa-for-us" id="doa-for-us">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 text-center">
-                    <br><br><br><br>
-                    <h5>DOA FOR US BELUM GAES</h5>
-                    <br><br><br><br>
+                <div class="col-md-12 text-center">
+                    <br>
+                    <br>
+                    <h2>Doa For Us</h2>
                 </div>
             </div>
+        </div>
+        <div style="text-align:center;">
+            <div class="fb-comments" data-href="http://inknews.pe.hu/wedding2/" data-width="800" data-numposts="2"></div>
         </div>
     </section>
 
@@ -282,6 +317,13 @@
                 } // End if
             });
         });
+    </script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
     </script>
 
 </body>
